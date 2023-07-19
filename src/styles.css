@@ -1,0 +1,24 @@
+body{
+    background-size: 100%;
+}
+
+.h-600{
+    height: 600px;
+}
+.w-100{
+    width: 100%;
+}
+
+.main-row-dimensions{
+    width: 100%;
+    height: 90%;
+}
+.round-border{
+    border-radius: 30px;
+}
+.green{
+    background-color: #27823f !important;
+}
+.text-green{
+    color: #27823f !important;
+}
