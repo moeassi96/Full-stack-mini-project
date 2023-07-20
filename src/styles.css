@@ -2,8 +2,8 @@ body{
     background-size: 100%;
 }
 
-.h-600{
-    height: 600px;
+.h-700{
+    height: 700px;
 }
 .w-100{
     width: 100%;
@@ -21,4 +21,31 @@ body{
 }
 .text-green{
     color: #27823f !important;
+}
+.invalid-p{
+    color: red;
+    display: none;
+}
+
+.invalid-u{
+    color: red;
+    display: none;
+}
+.all-fields{
+    color: red;
+    display: none;
+}
+.invalid-user{
+    color: red;
+    display: none;
+}
+.valid-user{
+    color: rgb(13, 220, 33);
+    display: none;
+}
+#welcome{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+
 }

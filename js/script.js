@@ -15,7 +15,9 @@ window.onload = () => {
         email,
         phone,
       }
-    
+      console.log(username,password,email,phone)
+      
+      if (username != "" && password!= "" && email!= "" && phone!= "" ){
       fetch("http://localhost/project/Full-stack-mini-project/api/signup.php", {
         method: "POST",
         headers: {
@@ -26,13 +28,22 @@ window.onload = () => {
       .then(response => response.json())
       .then(data => {
         if (data.status === "Sign up successful") {
-            alert("Sign up successful!");
+            document.querySelector(".all-fields").style.display = "none"
+            document.querySelector(".invalid-user").style.display = "none"
+            document.querySelector(".valid-user").style.display = "block"
         } else {
-            alert("Invalid username. Sign up failed.");
+            document.querySelector(".all-fields").style.display = "none"
+            document.querySelector(".invalid-user").style.display = "block"
+            document.querySelector(".valid-user").style.display = "none"
         }
     })
     .catch(error => console.log(error));
-  
+
+    }else{
+        document.querySelector(".all-fields").style.display = "block"
+        document.querySelector(".invalid-user").style.display = "none"
+        document.querySelector(".valid-user").style.display = "none"
+    }
     })
 
 
@@ -58,13 +69,20 @@ window.onload = () => {
       .then(response => response.json())
       
       .then(data => {
-        console.log(data)
+
         if (data.status === "user not found") {
-            alert("user not found");
+            document.querySelector(".invalid-u").style.display = "block"
+            document.querySelector(".invalid-p").style.display = "none"
+            document.getElementById("signinusername").value = "";
+            document.getElementById("signinpassword").value = "";
         } else if(data.status === "logged in") {
-            alert("logged in");
+            localStorage.setItem('username', username);
+            window.location.href = "welcome.html";
+            
         }else{
-            alert("wrong password");
+            document.querySelector(".invalid-u").style.display = "none"
+            document.querySelector(".invalid-p").style.display = "block"
+            document.getElementById("signinpassword").value = "";
         }
     })
     .catch(error => console.log(error));
