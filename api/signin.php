@@ -1,8 +1,11 @@
 <?php
 include('connection.php');
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+header("Content-Type: application/json");
+$data = json_decode(file_get_contents('php://input'), true);
+
+$username = $data['username'];
+$password = $data['password'];
 
 $query = $mysqli->prepare('select username,password,email,phone from users where username=?');
 $query->bind_param('s', $username);

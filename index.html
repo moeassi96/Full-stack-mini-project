@@ -48,13 +48,13 @@
                     </div>
                     <form class="mt-1">
                         <div class="mx-2">
-                            <input type="email" id="#" class="form-control form-control-lg"/>
-                            <label class="form-label" for="#">Email address or Phone number</label>
+                            <input id="signinusername" type="email" id="#" class="form-control form-control-lg"/>
+                            <label class="form-label" for="#">Username</label>
                         </div>
             
                     
                         <div class="mx-2">
-                            <input type="password" class="form-control form-control-lg" />
+                            <input id="signinpassword" type="password" class="form-control form-control-lg" />
                             <label class="form-label">Password</label>
                         </div>
             
@@ -66,7 +66,7 @@
                             <a href="#!" style="color: #27823f">Forgot password?</a>
                     </div>
             
-                    <button type="button" class="btn btn-primary btn-lg green w-100">Sign in</button>
+                    <button type="button" id="signinbtn" class="btn btn-primary btn-lg green w-100">Sign in</button>
             
                     <div class="divider d-flex align-items-center my-4">
                         <p class="text-center fw-bold mx-3 mb-0 text-muted w-100">OR</p>
@@ -86,29 +86,29 @@
                         
                                         <div class="mx-2">
                                             <label class="form-label">User Name</label>
-                                            <input type="name" class="form-control form-control-lg"/>
+                                            <input id="username" type="name" class="form-control form-control-lg"/>
                                         </div>
 
                                         <div class="mx-2">
                                             <label class="form-label" for="#">Phone number</label>
-                                            <input type="number" class="form-control form-control-lg" />
+                                            <input id="phone" type="number" class="form-control form-control-lg" />
                                         </div>
                                         
                                         <div class="mx-2">
                                             <label class="form-label" for="#">Email Address</label>
-                                            <input type="email" class="form-control form-control-lg" />
+                                            <input id="email" type="email" class="form-control form-control-lg" />
                                         </div>
 
                                         <div class="mx-2">
                                             <label class="form-label" for="#">Password</label>
-                                            <input type="password" class="form-control form-control-lg" />
+                                            <input id="password" type="password" class="form-control form-control-lg" />
                                         </div>
                                     </form>
                                 </div>
 
                                     <div class="modal-footer border-0">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" style="background-color: #27823f;">Sign Up</button>
+                                        <button id="signupbtn" type="button" class="btn btn-primary" data-bs-dismiss="modal" style="background-color: #27823f;">Sign Up</button>
                                     
                                     </div>
                             </div>
@@ -175,7 +175,7 @@
                 </div>
 
             </footer>
-
+            <script src="js/script.js"></script>
         </div>
 
     </body>
