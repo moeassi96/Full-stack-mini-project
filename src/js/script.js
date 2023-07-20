@@ -15,7 +15,7 @@ window.onload = () => {
         email,
         phone,
       }
-      console.log(username,password,email,phone)
+      
       
       if (username != "" && password!= "" && email!= "" && phone!= "" ){
       fetch("http://localhost/project/Full-stack-mini-project/src/api/signup.php", {
