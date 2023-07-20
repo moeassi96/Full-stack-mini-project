@@ -18,7 +18,7 @@ window.onload = () => {
       console.log(username,password,email,phone)
       
       if (username != "" && password!= "" && email!= "" && phone!= "" ){
-      fetch("http://localhost/project/Full-stack-mini-project/api/signup.php", {
+      fetch("http://localhost/project/Full-stack-mini-project/src/api/signup.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -59,7 +59,7 @@ window.onload = () => {
             password,
           }
 
-        fetch("http://localhost/project/Full-stack-mini-project/api/signin.php", {
+        fetch("http://localhost/project/Full-stack-mini-project/src/api/signin.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
