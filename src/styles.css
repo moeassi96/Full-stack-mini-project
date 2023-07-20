@@ -5,6 +5,7 @@ body{
 .h-700{
     height: 700px;
 }
+
 .w-100{
     width: 100%;
 }
@@ -13,15 +14,19 @@ body{
     width: 100%;
     height: 90%;
 }
+
 .round-border{
     border-radius: 30px;
 }
+
 .green{
     background-color: #27823f !important;
 }
+
 .text-green{
     color: #27823f !important;
 }
+
 .invalid-p{
     color: red;
     display: none;
@@ -31,10 +36,12 @@ body{
     color: red;
     display: none;
 }
+
 .all-fields{
     color: red;
     display: none;
 }
+
 .invalid-user{
     color: red;
     display: none;
@@ -43,9 +50,9 @@ body{
     color: rgb(13, 220, 33);
     display: none;
 }
+
 #welcome{
     font-size: 50px;
     color: white;
     text-align: center;
-
 }
